@@ -14,6 +14,10 @@ public class VerticalMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position+=verticalSpeed*Time.deltaTime*Vector3.forward;
+        if (GameState.gameStateInstance.levelStates == GameState.LevelStates.Started)
+        {
+            transform.position+=verticalSpeed*Time.deltaTime*Vector3.forward;
+
+        }
     }
 }

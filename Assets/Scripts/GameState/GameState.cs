@@ -11,6 +11,10 @@ public class GameState : MonoBehaviour
     }
     public static GameState gameStateInstance;
     public LevelStates levelStates=LevelStates.NotStarted;
+    public int currentLevel=0;
+    public int maxLevel= 0;
+
+    public int gameMoney=0;
     private void Awake() {
         if(gameStateInstance!=null){
             Destroy(this);

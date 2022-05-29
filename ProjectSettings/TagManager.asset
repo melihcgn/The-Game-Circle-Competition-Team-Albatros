@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bag
   - Collector
+  - Hand
   layers:
   - Default
   - TransparentFX

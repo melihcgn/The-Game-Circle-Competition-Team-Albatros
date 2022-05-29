@@ -4,10 +4,15 @@ using UnityEngine;
 using DG.Tweening;
 public class BagPainter : MonoBehaviour
 {
-    [SerializeField] Color selectedColor;
+    Color selectedColor;
     [SerializeField] ParticleSystem pparticleSystem;
 
     private void Awake() {
+        selectedColor= new Color(
+       Random.Range(0f, 1f),
+       Random.Range(0f, 1f),
+       Random.Range(0f, 1f)
+   );
         var main = pparticleSystem.main;
         main.startColor = new ParticleSystem. MinMaxGradient( selectedColor );
     }
