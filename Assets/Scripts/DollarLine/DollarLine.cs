@@ -15,6 +15,7 @@ public class DollarLine : MonoBehaviour
             other.transform.DOShakeScale(0.3f,.01f);
             other.transform.DOShakeRotation(0.3f, .01f);
             hand.transform.DOMoveX(10,1);
+
             Destroy(other.gameObject,.2f);
         }
     }
